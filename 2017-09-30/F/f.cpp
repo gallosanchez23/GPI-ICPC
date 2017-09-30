@@ -44,7 +44,7 @@ int main() {
         for(k++; k < agenda.size(); k++) {
           if(agenda[k].inicio < b)
             suma += agenda[k].valor;
-          if(b >= agenda[k].fin)
+          if(agenda[k].fin >= b)
             break;
         }
         cout << suma << endl;
