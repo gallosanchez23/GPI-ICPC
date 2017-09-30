@@ -11,6 +11,8 @@ int main() {
   }
   int a = x.top();
   x.pop();
-  cout << ((a == 1 && x.top() == 2) || (a == 1 && x.top() == 3) || (a == 2 && x.top() == 3) ? 'S' : 'N') << endl;
+  int b = x.top();
+  x.pop();
+  cout << ((a == 1 && b == 2) || (a == 1 && b == 3) || (a == 2 && b == 3) || (a == 1 && b == 4 && x.top() == 5) ? 'S' : 'N')<< endl;
   return 0;
 }
