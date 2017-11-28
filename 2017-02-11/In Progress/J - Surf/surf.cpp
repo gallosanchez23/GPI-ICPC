@@ -16,7 +16,7 @@ int main(){
     time[m] = m + w;
     options.insert(m);
   }
-  for(set<string>::iterator it = options.begin();  it!= options.end(); ++it){
+  for(set<int>::iterator it = options.begin();  it!= options.end(); ++it){
     time = 0;
     road.push(*(it));
     time
